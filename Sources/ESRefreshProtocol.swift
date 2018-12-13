@@ -99,7 +99,7 @@ fileprivate class ESRefreshImpacter {
         return nil
     }()
     
-    static public func impact() -> Void {
+    static open func impact() -> Void {
         if #available(iOS 10.0, *) {
             if let impacter = impacter as? UIImpactFeedbackGenerator {
                 impacter.impactOccurred()

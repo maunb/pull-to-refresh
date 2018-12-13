@@ -88,16 +88,16 @@ open class ESRefreshDataManager {
         }
     }
     
-    public static func clearAll() {
+    open static func clearAll() {
         self.clearLastRefreshInfo()
         self.clearExpiredTimeIntervalInfo()
     }
     
-    public static func clearLastRefreshInfo() {
+    open static func clearLastRefreshInfo() {
         UserDefaults.standard.set(nil, forKey: ESRefreshDataManager.lastRefreshKey)
     }
     
-    public static func clearExpiredTimeIntervalInfo() {
+    open static func clearExpiredTimeIntervalInfo() {
         UserDefaults.standard.set(nil, forKey: ESRefreshDataManager.expiredTimeIntervalKey)
     }
     
